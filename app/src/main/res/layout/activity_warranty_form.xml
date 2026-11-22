@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F2F5FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvFormTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Warranty"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#17365D"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save your product quickly and easily."
+            android:textColor="#64748B"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name *"
+            android:textStyle="bold"
+            android:textColor="#17365D"/>
+
+        <EditText
+            android:id="@+id/etProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Logitech G304"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:layout_marginBottom="18dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textStyle="bold"
+            android:textColor="#17365D"/>
+
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etCustomCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Specify your category"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purchase Date"
+            android:textStyle="bold"
+            android:textColor="#17365D"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHANGE PURCHASE DATE"
+            android:backgroundTint="#526D91"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#17365D"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Warranty Duration (Months)"
+            android:textStyle="bold"
+            android:textColor="#17365D"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 mo"/>
+
+            <RadioButton
+                android:id="@+id/rb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 mo"/>
+
+            <RadioButton
+                android:id="@+id/rb12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 mo"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rb24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 mo"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Or enter custom months"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/tvExpiryPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#17365D"
+            android:textStyle="bold"
+            android:background="#E2EAF5"
+            android:padding="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/tvOptionalToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Additional details (optional)"
+            android:textColor="#17365D"
+            android:textStyle="bold"
+            android:padding="14dp"
+            android:background="#E2EAF5"/>
+
+        <LinearLayout
+            android:id="@+id/optionalFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="12dp">
+
+            <EditText
+                android:id="@+id/etBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Brand"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/etSeller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Store / Seller"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/etReceipt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Receipt / Order Number"/>
+
+            <EditText
+                android:id="@+id/etNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Notes"
+                android:inputType="textMultiLine"
+                android:minLines="2"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE WARRANTY"
+            android:backgroundTint="#17365D"
+            android:layout_marginTop="24dp"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:backgroundTint="#64748B"/>
+
+    </LinearLayout>
+</ScrollView>

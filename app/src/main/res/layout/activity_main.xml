@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F3F5FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="26dp">
+
+
+        <ImageView
+            android:id="@+id/imgWartyLogo"
+            android:layout_width="220dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:src="@drawable/warty_logo"
+            android:contentDescription="WARTY Logo"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="9dp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Every warranty. One safe place."
+            android:textSize="15sp"
+            android:textColor="#64748B"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="42dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_warty_card"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome back"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#18345B"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign in or create your account below."
+                android:textSize="13sp"
+                android:textColor="#64748B"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="26dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EMAIL ADDRESS"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#526580"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/bg_warty_input"
+                android:hint="you@example.com"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="#18345B"
+                android:padding="14dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#526580"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/bg_warty_input"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="#18345B"
+                android:padding="14dp"
+                android:layout_marginBottom="26dp"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="SIGN IN"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#18345B"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="CREATE AN ACCOUNT"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#52749A"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Securely store and access your warranties."
+            android:textSize="12sp"
+            android:textColor="#94A3B8"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+</ScrollView>
